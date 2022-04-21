@@ -9,8 +9,8 @@
         "logDriver": "awslogs",
         "secretOptions": null,
         "options": {
-          "awslogs-group": "/ecs/APR20VlogerCluster01",
-          "awslogs-region": "us-east-1",
+          "awslogs-group": "/ecs/APR21VlogerTC01",
+          "awslogs-region": "ap-south-1",
           "awslogs-stream-prefix": "ecs"
         }
       },
@@ -37,7 +37,7 @@
       "memoryReservation": 128,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "170690553296.dkr.ecr.us-east-1.amazonaws.com/apr20vlogercontainer01",
+      "image": "170690553296.dkr.ecr.ap-south-1.amazonaws.com/apr21vlogerrepository01",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -54,7 +54,7 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "APR20VlogerCon01"
+      "name": "APR21VlogerContainer01"
     }
   ],
   "placementConstraints": [],
@@ -64,8 +64,8 @@
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:170690553296:task-definition/APR20VlogerCluster01:1",
-  "family": "APR20VlogerCluster01",
+  "taskDefinitionArn": "arn:aws:ecs:ap-south-1:170690553296:task-definition/APR21VlogerTC01:1",
+  "family": "APR21VlogerTC01",
   "requiresAttributes": [
     {
       "targetId": null,
