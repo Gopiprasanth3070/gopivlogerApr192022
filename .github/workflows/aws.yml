@@ -8,7 +8,9 @@ on:
 jobs:
   deployment:
     runs-on: ubuntu-latest
-    environment: test
+    environment:
+        name: test
+        url: https://github.com/Gopiprasanth3070/gopivlogerApr192022/settings/environments
     steps:
       - name: deploy
         uses: actions/checkout@v3
