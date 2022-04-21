@@ -24,21 +24,21 @@
 #    See the documentation for each action used below for the recommended IAM policies for this IAM user,
 #    and best practices on handling the access key credentials.
 
-name: Dev Deploy to Amazon ECS
+name: prod Deploy to Amazon ECS
 
 on:
   push:
     branches:
-      - dev
+      - prod
 
 env:
   AWS_REGION: us-east-1                   # set this to your preferred AWS region,e.g. us-west-1
-  ECR_REPOSITORY: apr21testrepository01           # set this to your Amazon ECR repository name
-  ECS_SERVICE: APR21testService01                  # set this to your Amazon ECS service name
-  ECS_CLUSTER: APR21testCluster01                # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: ./test-taskdefinition.json # set this to the path to your Amazon ECS task definition
+  ECR_REPOSITORY: apr21prodrepository01           # set this to your Amazon ECR repository name
+  ECS_SERVICE: APR21prodService01                  # set this to your Amazon ECS service name
+  ECS_CLUSTER: APR21prodCluster01                # set this to your Amazon ECS cluster name
+  ECS_TASK_DEFINITION: prod-taskdefinition.json # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: APR21testContainer01           # set this to the name of the container in the
+  CONTAINER_NAME: APR21prodContainer01           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
 
 permissions:
