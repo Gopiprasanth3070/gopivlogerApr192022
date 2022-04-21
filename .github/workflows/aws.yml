@@ -32,13 +32,13 @@ on:
       - main
 
 env:
-  AWS_REGION: us-east-1                  # set this to your preferred AWS region, e.g. us-west-1
-  ECR_REPOSITORY: apr20vlogercontainer01          # set this to your Amazon ECR repository name
-  ECS_SERVICE: APR20VlogerService01                 # set this to your Amazon ECS service name
-  ECS_CLUSTER: APR20VlogerCluster01                 # set this to your Amazon ECS cluster name
+  AWS_REGION: ap-south-1                  # set this to your preferred AWS region, e.g. us-west-1
+  ECR_REPOSITORY: apr21vlogerrepository01         # set this to your Amazon ECR repository name
+  ECS_SERVICE: APR21VlogerService01                 # set this to your Amazon ECS service name
+  ECS_CLUSTER: APR21VlogerCluster01                 # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: ./main-taskdefinition.json  # set this to the path to your Amazon ECS task definition
                                                # file, e.g. .aws/task-definition.json
-  CONTAINER_NAME: APR20VlogerCon01           # set this to the name of the container in the
+  CONTAINER_NAME: APR21VlogerContainer01           # set this to the name of the container in the
                                                # containerDefinitions section of your task definition
 
 permissions:
